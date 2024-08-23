@@ -1,0 +1,248 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall typography settings */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/slider1.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn-primary {
+    padding: 0.75rem 2rem;
+    font-size: 1.25rem;
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* About Us Summary */
+.about-us {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.about-us .btn-secondary {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    background-color: #6c757d;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.about-us .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Key Services */
+.services {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.services .row .col-md-4 {
+    margin-bottom: 2rem;
+}
+
+.services i {
+    color: #28a745;
+    margin-bottom: 1rem;
+}
+
+.services h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.services p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Featured Products */
+.featured-products {
+    padding: 4rem 0;
+}
+
+.featured-products h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.featured-products .row .col-md-4 {
+    margin-bottom: 2rem;
+}
+
+.featured-products .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-products .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Client Testimonials */
+.testimonials {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.testimonial {
+    font-style: italic;
+    color: #6c757d;
+}
+
+.testimonial h5 {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .services .row .col-md-4 {
+        margin-bottom: 1.5rem;
+    }
+
+    .featured-products .row .col-md-4 {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Logo Styling */
+.logo {
+    max-width: 110px; /* Adjust the width as needed */
+    height: 65px;     /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto;  /* Center the logo horizontally */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+    filter: brightness(1.2); /* Brighten the logo on hover */
+}
+
+/* Responsive Logo */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 100px; /* Smaller logo size on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        max-width: 80px; /* Even smaller logo size on very small screens */
+    }
+}
