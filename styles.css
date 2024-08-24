@@ -531,3 +531,85 @@ footer a:hover {
         font-size: 0.9rem;
     }
 }
+
+
+/* Footer Styles */
+.footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* White text color */
+    padding: 40px 0;
+}
+
+.footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff6600; /* Orange color for hover effect */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #fff; /* White horizontal rule */
+    margin: 20px 0;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        padding: 30px 0;
+    }
+
+    .footer h5 {
+        font-size: 1.1rem;
+    }
+
+    .footer p, .footer ul li a {
+        font-size: 0.75rem;
+    }
+
+    .social-icons a {
+        font-size: 1.25rem;
+    }
+}
